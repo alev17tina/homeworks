@@ -1,0 +1,112 @@
+.body {
+    box-sizing: border-box;
+}
+.container {
+    width: 1280px;
+    font-family: 'Montserrat', sans-serif;
+    background: url(./images/namaste_green.jpeg)
+}
+.original {
+    width: 100%;
+    position: top;
+}
+.row {
+    width: 960px;
+    margin: 0 160px; 
+}
+.row-2 {
+    margin-top: 105px;
+}
+.col {}
+.col-1 {
+    display: inline-block;
+    width: 100%;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.col-4 {
+    float: left;
+    width: 25%;
+    height: 420px;
+    background: white;
+
+}
+.col-4 .icon {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.icon-2 {
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+.icon-3 {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.col-4 i {
+    font-size: 64px;
+    color: black;
+}
+.col-4 h2 {
+    color: #27b4b6;
+    font-size: 23px;
+    margin: 0;
+}
+.col-4 p {
+    color: gray;
+    font-size: 12px;
+    text-transform: none;
+    padding: 12px 30px 0 30px;
+    line-height: 1.8;
+    font-weight: 100;
+    white-space: pre-wrap;
+    text-align: center;
+    hyphens: auto;
+}
+
+.panel-hover {
+    background: #27b4b6;
+}
+.panel-hover h2{
+    color: white;
+}
+.panel-hover p {
+    color: white;
+}
+.panel-hover i {
+    color: white;
+}
+
+.panel:hover {
+    background: #27b4b6;
+}
+.panel:hover p{
+    color: white;
+}
+.panel:hover h2{
+    color: white;
+}
+.panel:hover img {
+    color: white;
+}
+.panel:hover i {
+    color: white;
+}
+
+.text-1 {
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    font-weight: 800;
+}
+.text-2 {
+    color: #27b4b6;
+    font-size: 45px;
+    letter-spacing: 5.2px;
+}
+.text-3 {
+    margin: 0 220px 0 220px;
+    font-size: 16px;
+    line-height: 1.8;
+
+}
