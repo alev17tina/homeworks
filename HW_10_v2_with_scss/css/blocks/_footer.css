@@ -1,0 +1,150 @@
+.footer {
+  background-color: #605a58;
+  padding-bottom: 13px; }
+
+.footerlogo {
+  padding: 39px 0px 0px 57px; }
+
+.name {
+  text-transform: capitalize;
+  font-family: 'Rufina', serif;
+  font-weight: 100;
+  font-size: 28px;
+  color: white;
+  line-height: 1;
+  padding-left: 59px;
+  padding-top: 18px; }
+
+.location {
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  color: #d2d0d0;
+  font-weight: 100;
+  line-height: 1;
+  padding: 0px 0 0 27px;
+  letter-spacing: .02em; }
+  .location__img {
+    padding: 2px 0px 0 60px; }
+
+.social {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  float: left;
+  margin: 4px 0px 5px 16px;
+  background-color: #474241;
+  text-align: center; }
+  .social:hover {
+    color: #605a58;
+    background-color: #f79440;
+    cursor: pointer; }
+  .social__block {
+    padding-left: 45px;
+    padding-top: 15px; }
+
+i {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 9px; }
+
+.fab {
+  color: #605a58; }
+
+.text__about {
+  font-family: 'Open Sans', sans-serif;
+  color: #d2d0d0;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 58px; }
+
+.skills__my {
+  text-transform: capitalize;
+  font-family: 'Rufina', serif;
+  font-weight: 100;
+  font-size: 28px;
+  color: #d2d0d0;
+  line-height: 1;
+  padding: 10px 0 0 18px; }
+
+.skills__title {
+  color: #d2d0d0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18.5px;
+  font-weight: 100;
+  float: left;
+  margin: 0 0px 0 0px; }
+
+.skills__progressbar {
+  padding: 0 0 10px 0px; }
+
+.skills__value {
+  padding: 7px 0 0px 4px; }
+
+.skills__bar {
+  height: 14px;
+  width: 263px;
+  background: #a19795; }
+  .skills__bar--active {
+    height: 14px;
+    width: 263px;
+    background: #d2d0d0; }
+  .skills__bar:hover {
+    background: #d2d0d0; }
+
+.skills__progress--active {
+  height: 14px;
+  background: #f79440;
+  border: none;
+  width: 83%; }
+
+.skills__progress--ps {
+  height: 14px;
+  background: #474241;
+  border: none;
+  width: 93%; }
+
+.skills__progress--cdr {
+  height: 14px;
+  background: #474241;
+  border: none;
+  width: 74%; }
+
+.skills__progress--fl {
+  height: 14px;
+  background: #474241;
+  border: none;
+  width: 37%; }
+
+.skills__progress--dvi {
+  height: 14px;
+  background: #474241;
+  border: none;
+  width: 83%; }
+
+.skills__progress--pr {
+  height: 14px;
+  background: #474241;
+  border: none;
+  width: 14%; }
+
+.skills__bar:hover .skills__progress--ps {
+  background: #f79440; }
+
+.skills__bar:hover .skills__progress--ai {
+  background: #f79440; }
+
+.skills__bar:hover .skills__progress--cdr {
+  background: #f79440; }
+
+.skills__bar:hover .skills__progress--fl {
+  background: #f79440; }
+
+.skills__bar:hover .skills__progress--dvi {
+  background: #f79440; }
+
+.skills__bar:hover .skills__progress--pr {
+  background: #f79440; }

@@ -1,0 +1,210 @@
+.footer{
+    background-color: #605a58;
+    padding-bottom: 13px;
+}
+// .about{
+//     padding-top: 34px;
+//     padding-left: 18px;
+// }
+.footerlogo{
+    // padding: 4px 0px 0px 47px;
+    padding: 39px 0px 0px 57px;
+}
+.name{
+    text-transform: capitalize;
+    font-family: 'Rufina', serif;
+    font-weight: 100;
+    font-size: 28px;
+    color: white;
+    line-height: 1;
+    // padding-left: 67px;
+    // padding-top: 3px;
+    padding-left: 59px;
+    padding-top: 37px;
+    margin: 0;
+}
+.location {
+    &__list{
+        box-sizing: border-box;
+        list-style: none;
+        display: flex;
+    }
+    &__address{
+        text-transform: capitalize;
+        font-family: 'Open Sans', sans-serif;
+        color: #d2d0d0;
+        font-weight: 100;
+        line-height: 1;
+        padding: 2px 0 0 1px;
+        letter-spacing: .05em;
+        margin: 0;
+        &--first{
+            padding-left: 9px;
+        }
+        &:hover {
+            color: #f79440;
+            cursor: pointer;
+        }
+    }
+    &__img {
+        padding: 5px 0 0 19px;
+        &:hover {
+            color: #f79440;
+            cursor: pointer;
+        }
+    }
+}
+.social{
+    box-sizing: border-box;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    float: left;
+    margin: 1px 0px 5px 16px;
+    background-color: #474241;
+    text-align: center;
+    &:hover {
+        color: #605a58;
+        background-color: #f79440;
+        cursor: pointer;
+    }
+    &__block{
+        padding-left: 45px;
+    }
+}
+i{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 9px;
+}
+.fab {
+    color: #605a58;
+}
+.text__about {
+    font-family: 'Open Sans', sans-serif;
+    color: #d2d0d0;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
+    // padding: 0 58px;
+    padding-right: 55px;
+    padding-left: 58px;
+}
+.skills {
+    &__my {
+        text-transform: capitalize;
+        font-family: 'Rufina', serif;
+        font-weight: 100;
+        font-size: 28px;
+        color: #d2d0d0;
+        line-height: 1;
+        padding: 10px 0 0 10px;
+    }
+    &__name {
+        margin: 4px 0 0 0;
+        &--ps {
+            margin-left: 8px;
+        }
+        &--ai {
+            margin-left: 12px;
+        }
+        &--cdr {
+            margin-left: -4px;
+        }
+        &--fl {
+            margin-left: 15px;
+        }
+        &--dw {
+            margin-left: -2px;
+        }
+        &--pr {
+            margin-left: 9px;
+        }
+    }
+    &__title {
+        color: #d2d0d0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18.5px;
+        font-weight: 100;
+        float: left;
+        margin: 0 0px 0 0px;
+    }
+    &__progressbar {
+        padding: 0 0 10px 0px;
+    }
+    &__value {
+        margin: 8px 0 0 -12px;
+    }
+    &__bar {
+        height: 14px;
+        width: 263px;
+        background: #a19795;
+        &--active {
+            height: 14px;
+            width: 263px;
+            background: #d2d0d0;
+        }
+        &:hover {
+            background: #d2d0d0;
+        }
+    }
+}
+//mixin skillsprogressline
+@mixin skillsprogressline {
+    height: 14px;
+    background: #474241;
+    border: none;
+}
+.skills__progress{
+    &--active {
+        height: 14px;
+        background: #f79440;
+        border: none;
+        width: 83%;
+    }
+    &--ps {
+        @include skillsprogressline;
+        width: 93%;
+    }
+    &--cdr {
+        @include skillsprogressline;
+        width: 74%;
+    }
+    &--fl {
+        @include skillsprogressline;
+        width: 37%;
+    }
+
+    &--dvi {
+        @include skillsprogressline;
+        width: 83%;
+    }
+
+    &--pr {
+        @include skillsprogressline;
+        width: 14%;
+    }
+}
+// mixin backgrcolor-hover
+@mixin backgrcolor-hover {
+    background: #f79440;
+}
+.skills__bar:hover .skills__progress--ps {
+    @include backgrcolor-hover;
+}
+.skills__bar:hover .skills__progress--ai {
+    @include backgrcolor-hover;
+}
+.skills__bar:hover .skills__progress--cdr {
+    @include backgrcolor-hover;
+}
+.skills__bar:hover .skills__progress--fl {
+    @include backgrcolor-hover;
+}
+.skills__bar:hover .skills__progress--dvi {
+    @include backgrcolor-hover;
+}
+.skills__bar:hover .skills__progress--pr {
+    @include backgrcolor-hover;
+}
