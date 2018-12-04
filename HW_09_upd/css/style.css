@@ -1,0 +1,179 @@
+body {
+    background: url('./SEFolio\ PSD.jpg');
+    background-position: top;
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+    font-family: 'Asap', sans-serif;
+}
+.container {
+    text-align: center;
+    align-content: center;
+    max-width: 960.2px;
+}
+.header {
+    text-align: center;
+    align-content: center; 
+    padding-top: 57px;   
+}
+.title {
+    font-size: 30px;
+    color: #202020;
+}
+.green {
+    color: #2ec06c;
+    font-weight: 900;
+}
+.text {
+    font-size: 15.01px;
+    color: #666666;
+    padding-bottom: 26px;
+    letter-spacing: 0.78px;
+}
+.row {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.row-main {
+    margin: 0 0px; 
+}
+.row-1 {
+    margin: 0 -10px; 
+    margin-top: 16px;
+}
+.row-3 {
+    margin: 0 10px; 
+    text-align: left;
+}
+.row-4 {
+    margin-left: 10px; 
+}
+.col {
+    box-sizing: border-box;
+    float: left;
+}
+.social {
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 140px;
+    height: 140px;
+    border-radius: 3%;
+    float: left;
+    margin: 0 0px 20px 20px;
+}
+i {
+    font-size: 52px;
+    text-align: center;
+    padding-top: 42px;
+}
+.facebook {
+    color: #3b5998;
+}
+.facebook:hover {
+    color: white;
+    background-color: #3b5998;
+    cursor: pointer;
+    border: 1px solid #3b5998;
+}
+.twitter {
+    color: #00aced;
+}
+.twitter:hover {
+    color: white;
+    background-color: #00aced;
+    cursor: pointer;
+    border: 1px solid #00aced;
+}
+.insta {
+    color: #517fa4;
+}
+.insta:hover {
+    color: white;
+    background-color: #517fa4;
+    cursor: pointer;
+    border: 1px solid #517fa4;
+}
+.dribbble {
+    color: #ff0084;
+}
+.dribbble:hover {
+    color: white;
+    background-color: #ff0084;
+    cursor: pointer;
+    border: 1px solid #ff0084;
+}
+.message {
+    color: #ababab;
+    margin: 3px 0;
+}
+input {
+    box-sizing: border-box;
+    border: 1px solid #bababa;
+    font-family: 'Asap', sans-serif;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 15px;
+    outline: none;
+    padding-left: 20px;
+}
+::-webkit-input-placeholder {
+    color: #666666;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #bababa;
+    font-size: 15px;
+    font-family: 'Asap', sans-serif;
+    width: 580px;
+    height: 160px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    resize: none;
+    float: left;
+    padding-top: 18px;
+    padding-left: 20px;
+    position: relative;
+}
+input:focus {
+    border: 1px solid #2ec06c;
+}
+textarea:focus {
+    border: 1px solid #2ec06c;
+}
+#passive {
+    font-style: italic;
+}
+.submit {
+    box-sizing: border-box;
+    width: 40px;
+    height: 160px;
+    border: 1px solid #2ec06c;
+    border-radius: 0 5px 5px 0;
+    background: #2ec06c;
+    margin-left: -31px;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+}
+.fa-paper-plane {
+    font-size: 22px;
+    color: white;
+    padding-top: 0px;
+}
+.submit:hover {
+    border: 1px solid #1e7944;
+    background: #1e7944;
+    /* border: 1px solid #2ec06c;
+    background: white; */
+}
+/* .submit:hover .fa-paper-plane {
+    color: #2ec06c;
+} */
+input[name=project-name] , input[name=email] {
+    margin-top: 3px;
+}
