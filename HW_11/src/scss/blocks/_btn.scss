@@ -1,0 +1,40 @@
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:before {
+        padding-top: 100%;
+        content: '';
+        display: block;
+    }
+    &:hover {
+        color: white;
+    }
+    &:focus {
+        border-width: 3px;
+        outline: none;
+    }
+    i {
+        font-size: 55px;
+    }
+    &--facebook {
+        @include hover(#3b5998);
+    }
+    &--twitter {
+        @include hover(#00aced);
+    }
+    &--instagram {
+        @include hover(#517fa4);
+    }
+    &--dribble {
+        @include hover(#ff0084);
+    }
+}

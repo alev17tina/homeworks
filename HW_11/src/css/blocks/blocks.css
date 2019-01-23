@@ -1,0 +1,231 @@
+.header {
+  height: 638px;
+  background-image: url(../img/header-bg.png), url(../img/header-shadow.png);
+  background-position: top;
+  background-size: cover;
+  font-family: 'Karla Regular', sans-serif;
+  color: white; }
+  .header__head {
+    padding-top: 34px; }
+  .header__info {
+    padding-top: 120px; }
+  .header__logo {
+    cursor: pointer;
+    text-decoration: none; }
+  .header__slider {
+    list-style: none;
+    padding: 20px 0 0 30px; }
+  .header__point {
+    font-size: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    color: #4c4c4c; }
+    .header__point--active, .header__point:hover {
+      color: white; }
+  .header__skills {
+    padding-top: 74px; }
+  .header__sidebar {
+    display: none;
+    background: red;
+    max-width: 250px; }
+
+.logo__name {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  font-size: 28px; }
+  .logo__name--first {
+    font-weight: 700;
+    color: #2cbe6a; }
+  .logo__name--second {
+    font-weight: 300;
+    color: white; }
+
+.logo__img {
+  height: 25px;
+  width: 106px; }
+
+.sidebar {
+  list-style: none;
+  font-family: 'Asap', sans-serif; }
+  .sidebar__list {
+    position: relative; }
+  .sidebar__item {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block; }
+
+.skills {
+  height: 220px;
+  text-align: center;
+  cursor: pointer;
+  color: white; }
+  .skills__frame {
+    position: relative;
+    padding-top: 60px; }
+  .skills__icon {
+    position: absolute;
+    padding-top: 73px;
+    padding-left: 12px; }
+  .skills__name {
+    font-size: 26px;
+    font-weight: 100; }
+  .skills__button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #27ae60;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    display: none; }
+  .skills:hover {
+    background: #2cbe6a; }
+
+.skills:hover .skills__button {
+  display: block; }
+
+.skills:hover .skills__frame {
+  padding-top: 30px; }
+
+.skills:hover .skills__icon {
+  padding-top: 46px; }
+
+.skills:hover .skills__name {
+  padding-bottom: 11px; }
+
+.hello {
+  margin: 0; }
+  .hello__text {
+    font-size: 40px;
+    font-weight: 400; }
+    .hello__text--bold {
+      font-weight: 700; }
+
+.menu__open {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  color: white;
+  padding: 0 0 0 20px; }
+
+.menu__open:hover .header__sidebar {
+  display: block; }
+
+.about {
+  height: 584px;
+  background: url(../img/about-bg-main.png);
+  background-size: cover; }
+  .about__bg {
+    background: url(../img/about-bg-right.png);
+    background-size: cover; }
+  .about__hi {
+    padding-top: 90px; }
+  .about__name {
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize; }
+    .about__name--bold {
+      font-weight: 700; }
+  .about__text {
+    font-family: 'Karla Regular', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    text-align: justify; }
+  .about__button {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Asap', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: #2cbe6a;
+    text-transform: capitalize;
+    border: #2cbe6a solid 1px;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    background: none; }
+    .about__button:hover, .about__button--active {
+      color: white;
+      border-radius: 25px;
+      background-color: #2cbe6a; }
+  .about__slider {
+    list-style: none;
+    padding: 272px 0 0 31px; }
+  .about__point {
+    font-size: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    color: #4c4c4c; }
+    .about__point--active, .about__point:hover {
+      color: #2cbe6a; }
+
+.services {
+  height: 600px; }
+  .services__head {
+    padding-top: 100px; }
+  .services__cards {
+    padding-top: 30px; }
+  .services__my {
+    padding-top: 100px;
+    font-family: 'Asap', sans-serif;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize; }
+    .services__my--bold {
+      font-weight: 700; }
+  .services__about {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 20px; }
+  .services__icon {
+    padding-left: 10px;
+    padding-top: 26px; }
+  .services__name {
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    font-weight: 700; }
+  .services__text {
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 75%; }
+
+.partners {
+  background: url("../img/partners-bg.png"), no-repeat, 50%, 100%;
+  background-size: cover;
+  height: 350px; }
+  .partners__about {
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    color: white; }
+  .partners__slider {
+    list-style: none;
+    text-decoration: none; }
+
+.work__btn {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background: #b6b4b4;
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  display: none; }
+
+.reviews {
+  background: grey url("../img/feedback-bg.jpg"), url("../img/feedback-shadow.svg"), no-repeat, 50%, 100%;
+  background-size: cover;
+  text-align: center; }
+  .reviews__slider {
+    list-style: none;
+    text-decoration: none; }

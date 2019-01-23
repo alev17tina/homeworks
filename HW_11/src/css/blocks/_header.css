@@ -1,0 +1,115 @@
+.header {
+  height: 638px;
+  background-image: url(../img/header-bg.png), url(../img/header-shadow.png);
+  background-position: top;
+  background-size: cover;
+  font-family: 'Karla Regular', sans-serif;
+  color: white; }
+  .header__head {
+    padding-top: 34px; }
+  .header__info {
+    padding-top: 120px; }
+  .header__logo {
+    cursor: pointer;
+    text-decoration: none; }
+  .header__slider {
+    list-style: none;
+    padding: 20px 0 0 30px; }
+  .header__point {
+    font-size: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    color: #4c4c4c; }
+    .header__point--active, .header__point:hover {
+      color: white; }
+  .header__skills {
+    padding-top: 74px; }
+  .header__sidebar {
+    display: none;
+    background: red;
+    max-width: 250px; }
+
+.logo__name {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  font-size: 28px; }
+  .logo__name--first {
+    font-weight: 700;
+    color: #2cbe6a; }
+  .logo__name--second {
+    font-weight: 300;
+    color: white; }
+
+.logo__img {
+  height: 25px;
+  width: 106px; }
+
+.sidebar {
+  list-style: none;
+  font-family: 'Asap', sans-serif; }
+  .sidebar__list {
+    position: relative; }
+  .sidebar__item {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block; }
+
+.skills {
+  height: 220px;
+  text-align: center;
+  cursor: pointer;
+  color: white; }
+  .skills__frame {
+    position: relative;
+    padding-top: 60px; }
+  .skills__icon {
+    position: absolute;
+    padding-top: 73px;
+    padding-left: 12px; }
+  .skills__name {
+    font-size: 26px;
+    font-weight: 100; }
+  .skills__button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #27ae60;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    display: none; }
+  .skills:hover {
+    background: #2cbe6a; }
+
+.skills:hover .skills__button {
+  display: block; }
+
+.skills:hover .skills__frame {
+  padding-top: 30px; }
+
+.skills:hover .skills__icon {
+  padding-top: 46px; }
+
+.skills:hover .skills__name {
+  padding-bottom: 11px; }
+
+.hello {
+  margin: 0; }
+  .hello__text {
+    font-size: 40px;
+    font-weight: 400; }
+    .hello__text--bold {
+      font-weight: 700; }
+
+.menu__open {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  color: white;
+  padding: 0 0 0 20px; }
+
+.menu__open:hover .header__sidebar {
+  display: block; }

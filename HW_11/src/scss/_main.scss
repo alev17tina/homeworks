@@ -1,0 +1,13 @@
+// @import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700|Karla');
+
+@import './blocks/blocks.scss';
+
+body {
+    background-image: url("../img/sefolio-original.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}

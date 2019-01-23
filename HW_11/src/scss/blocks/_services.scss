@@ -1,0 +1,48 @@
+.services {
+    height: 596px;
+    &__head {
+        // padding-top: 100px;
+    }
+    &__cards {
+        padding-top: 40px;
+    }
+    &__my {
+        padding-top: 94px;
+        font-family: 'Asap', sans-serif;
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+        text-transform: capitalize;
+        &--bold {
+            font-weight: 700;
+        }
+    }
+    &__about {
+        font-family: 'Asap', sans-serif;
+        text-align: center;
+        margin: 0 0 0 5px;
+        font-size: 18px;
+        padding-top: 16px;
+    }
+    &__icon {
+        padding-left: 13px;
+        padding-top: 26px;
+    }
+    &__name {
+        font-family: 'Asap', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 22px 0 0 0;
+    }
+    &__text {
+        font-family: 'Asap', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        width: 78%;
+        text-align: justify;
+        line-height: 1.3;
+        margin: 10px 0 20px 0;
+    }
+
+}

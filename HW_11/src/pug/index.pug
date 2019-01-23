@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
+		link(href="https://fonts.googleapis.com/css?family=Asap:400,700|Karla:400,700", rel="stylesheet")
+		link(rel="stylesheet", href="../css/style.css")
+	body
+		.header
+			.container
+				.header__head
+					.row
+						.col.col-11
+							a(href="#").header__logo
+								//- img(src="../img/header-logo-sefolio.svg", alt="").logo__img
+								h1.logo__name.logo__name--first SE<span class="logo__name logo__name--second">FOLIO</span> 
+						.col.col-1
+							button.header__burger
+								img(src="../img/menu-open.svg", alt="").menu__img
+								//- button.header__burger.header__burger--close
+								//- 	<i class="fas fa-times"></i>	
+								//- 	.header__sidebar
+								//- 		a(href="#").header__logo
+								//- 			h1.logo__name.logo__name--first SE<span class="logo__name logo__name--second">FOLIO</span> 
+								//- 		ul.sidebar
+								//- 			li.sidebar__list
+								//- 				a(href="#").sidebar__item Home
+								//- 			li.sidebar__list 
+								//- 				a(href="index.html#about").sidebar__item about menu
+								//- 			li.sidebar__list 
+								//- 				a(href="index.html#services").sidebar__item services
+								//- 			li.sidebar__list 
+								//- 				a(href="index.html#portfolio").sidebar__item portfolio
+								//- 			li.sidebar__list
+								//- 				a(href="index.html#hire-me").sidebar__item hire me
+				.header__info
+					.row
+						.col.col-11
+							h1.hello
+								.hello__text Hello, I'm <span class="hello__text--bold">Eftakher</span> <br>A <span class="hello__text--bold">FrontEnd</span> designer
+						.col.col-1
+							ul.header__slider
+								li.header__point.header__point--active
+									<i class="fas fa-circle"></i>
+								li.header__point 
+									<i class="fas fa-circle"></i>
+								li.header__point 
+									<i class="fas fa-circle"></i>
+				.header__skills
+					.row
+						.col.col-3
+							.skills.slills--active
+								img(src="../img/design.png", alt="").skills__icon
+								img(src="../img/frame.png", alt="").skills__frame
+								h2.skills__name .UI/UX Design 
+								button(href="index.html#services").skills__button Read More
+						.col.col-3
+							.skills
+								img(src="../img/identity.png", alt="").skills__icon
+								img(src="../img/frame.png", alt="").skills__frame
+								h2.skills__name .Branding Identity
+								button(href="index.html#services").skills__button Read More
+						.col.col-3
+							.skills
+								img(src="../img/idea.png", alt="").skills__icon
+								img(src="../img/frame.png", alt="").skills__frame
+								h2.skills__name .Creative Idea
+								button(href="index.html#services").skills__button Read More
+						.col.col-3
+							.skills
+								img(src="../img/foto.png", alt="").skills__icon
+								img(src="../img/frame.png", alt="").skills__frame
+								h2.skills__name .Photography
+								button(href="index.html#services").skills__button Read More
+		.about
+			.offset-6.about__bg
+			.container
+				.row
+					.col.col-6
+						.about__hi
+							.row
+								.col.col-12
+									h1.about__name Hi! i'm <span class="about__name--bold">Eftakher</span>
+						.about__text
+							.row
+								.col.col-12
+									p.about__lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum deserunt mollit anim id est laborum.
+						.about__buttons
+							.row
+								.col.col-6
+									button.about__button My work
+								.col.col-6
+									button.about__button.about__button--active here me
+					.col.col-6
+						.about__image
+							ul.about__slider
+								li.about__point.about__point--active
+									<i class="fas fa-circle"></i>
+								li.about__point 
+									<i class="fas fa-circle"></i>
+								li.about__point 
+									<i class="fas fa-circle"></i>
+		.services
+			.container
+				.row.services__head
+					.col.col-12
+						h1.services__my My <span class="services__my--bold">Servicess</span>
+						p.services__about Showcase services in a spacious &#38; clean manner
+				.row.services__cards
+					.col.col-6
+						.row
+							.col.col-2
+								img(src="../img/web-design-1.png", alt="").services__icon
+							.col.col-10
+								h1.services__name Web Design
+								p.services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+					.col.col-6
+						.row
+							.col.col-2
+								img(src="../img/web-design-2.png", alt="").services__icon
+							.col.col-10
+								h1.services__name Web Design
+								p.services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+					.col.col-6
+						.row
+							.col.col-2
+								img(src="../img/web-design-3.png", alt="").services__icon
+							.col.col-10
+								h1.services__name Web Design
+								p.services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+					.col.col-6
+						.row
+							.col.col-2
+								img(src="../img/web-design-4.png", alt="").services__icon
+							.col.col-10
+								h1.services__name Web Design
+								p.services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+		.partners
+			.container
+				.row
+					.col.col-12
+						p.partners__about Some awesome companies we've had the pleasure to work with
+					.col.col-12
+						ul.partners__slider
+							li.partners__item
+								a(href="#").partners__link
+									img(src="../img/arrow-left.png", alt="").partners__arrow--active
+							li.partners__item
+								a(href="https://envato.com/").partners__link
+									img(src="../img/envato.png", alt="").partners__envato
+							li.partners__item
+								a(href="https://w3layouts.com/epils-agency-singlepage-multipurpose-flat-bootstrap-responsive-web-template/").partners__link
+									img(src="../img/epils.png", alt="").partners__epils
+							li.partners__item
+								a(href="http://lesscss.org/").partners__link
+									img(src="../img/less.png", alt="").partners__less
+							li.partners__item
+								a(href="https://jquery.com/").partners__link
+									img(src="../img/jquerry.png", alt="").partners__jquerry
+							li.partners__item
+								a(href="https://sass-lang.com/").partners__link
+									img(src="../img/sass.png", alt="").partners__sass
+							li.partners__item
+								a(href="#").partners__link
+									img(src="../img/arrow-right.png", alt="").partners__arrow
+		.work
+			.container
+				.row
+					.col.col-12
+						h2.work__title Check out some of my <br><span class="work__title--bold">latest</span> and <span class="work__title--bold">greatest</span> projects
+						p.work__about Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-1.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label OnTitle Logo Branding
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-2.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label OneTitle Full Branding
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-3.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label Splash Wines Branding
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-4.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label Beautifull World
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-5.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label Personal Web Design
+					.col.col-4
+						.work__item
+							.work__img--active
+							img(src="../img/table-6.jpg", alt="").work__img
+							button(href="#").work__btn Full Project
+							button(href="#").work__label Business Plan Design
+		.reviews
+			.container
+				.row
+					.col.col-12
+						h1.reviews__text “Loved the graphics very much and so happy I found this very ta“Loved the graphics very much and so happy I found this very ta"
+						p.reviews__name <span class="reviews__name--bold">Shauna Graham,</span> Alo Group
+						ul.reviews__slider 
+							li.reviews__point.reviews__point--active
+								<i class="fas fa-circle"></i>
+							li.reviews__point 
+								<i class="fas fa-circle"></i>
+							li.reviews__point 
+								<i class="fas fa-circle"></i>
+							li.reviews__point 
+								<i class="fas fa-circle"></i>
+		.contacts
+			.container
+				.row
+					.col.col-12
+						.contacts__header
+							p.contacts__title Have any <span class="contacts__bold">project!</span>
+							p.contacts__text Just send me a message I will help you and make you smile
+				.row
+					.col.col-4
+						.row
+							.col.col-6
+								a.contacts__item.contacts__item--facebook
+									<i class="fab fa-facebook-f"></i>
+								a.contacts__item.contacts__item--insta
+									<i class="fab fa-instagram"></i>
+							.col.col-6
+								a.contacts__item.contacts__item--twitter
+									<i class="fab fa-twitter"></i>
+								a.contacts__item.contacts__item--dribbble
+									<i class="fab fa-dribbble"></i>
+					.col.col-8
+						.row
+							.col.col-6
+								.contacts__form
+									input.contacts__input(type="text" name="name" id="active" value="Eftakher Ala")
+								.contacts__form
+									input.contacts__input(type="email" name="email" id="passive" placeholder="Your Email")
+							.col.col-6
+								.contacts__form
+									input.contacts__input(type="text" name="last-name" id="passive" placeholder="Last name")
+								.contacts__form
+									input.contacts__input(type="text" name="project-name" id="passive" placeholder="Project Name")
+						.row
+							.col.col-12
+								p.contacts__message
+									textarea(name="message" id="passive" placeholder="Your Message......")
+									button(type="submit" class="contacts__submit")
+										<i class="fas fa-paper-plane"></i>
+	.copywrite
+		.container
+			.row
+				.col.col-12
+					p.copywrite__text &copy; 2014 <span class="copywrite__text--second">SEFolio</span> /Design by <span class="copywrite__text--second">Eftacher Alam</span>

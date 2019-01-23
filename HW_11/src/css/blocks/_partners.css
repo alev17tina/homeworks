@@ -1,0 +1,11 @@
+.partners {
+  background: url("../img/partners-bg.png"), no-repeat, 50%, 100%;
+  background-size: cover;
+  height: 350px; }
+  .partners__about {
+    font-family: 'Asap', sans-serif;
+    font-size: 18px;
+    color: white; }
+  .partners__slider {
+    list-style: none;
+    text-decoration: none; }

@@ -1,0 +1,15 @@
+@mixin hover ($color) {
+    color: $color;
+    &:hover {
+        background-color: $color;
+        border-color: $color;
+    }
+}
+@mixin placeholder (){
+    &::-webkit-input-placeholder {@content};
+    &::-moz-placeholder {@content};
+    &:-ms-input-placeholder {@content};
+}
+
+$text-color: white;
+$color-active: #4cc881;
