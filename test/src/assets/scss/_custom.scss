@@ -1,0 +1,391 @@
+body {
+    background: url(/src/assets/img/example.jpg);
+    background-position: top center;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+}
+// .swiper-container {
+//     width: 600px;
+//     height: 300px;
+// }
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 3px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 4px solid #fff;
+    opacity: .5;
+    transition: opacity .6s ease;
+    &:active {
+        background: #fff;
+    }
+}
+.logo {
+    height: 100px;
+    &-title {
+        @include font-title;
+        font-size: 64px;
+    }
+}
+.logo:after {
+    content:'';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: $primary;
+    margin: 0px auto;
+}
+.logo-second:after {
+    content:'';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $primary;
+    margin: 2px auto;
+}
+.nav-block {
+    padding-left: 14px;
+}
+.link-title {
+    font-family: $font-family-base;
+    // font-size: 30px;
+    // font-style: italic;
+    font-weight: $font-weight-title;
+    letter-spacing: 1px;
+    color: $primary-text;
+    padding: .5rem 1.7rem;
+    &:hover {
+        color: $primary-text;
+        // text-shadow: $primary 0 0 10px;
+    }
+    &:after {
+        content:'';
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: $primary;
+        margin: auto;
+        transform: translateY(50px);
+        transition: .3s;
+        opacity: 0;
+        margin-top: -5px;
+    }
+    &:hover:after {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+// .v-center {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 100px;
+// }
+// .overlay {
+//     position: absolute;
+//     min-height: 100%;
+//     min-width: 100%;
+//     top: 100px;
+//     left: 0;
+//     z-index: 2;
+// }
+.main {
+    position: relative;
+    // text-align: center;
+    z-index: 1;
+    // &-container {
+    //     position: absolute;
+    //     align-items: center;
+    //     z-index: 2;
+    //     top: 100px;
+    // }
+    &-overlay {
+        // position: absolute;
+        min-height: 100%;
+        min-width: 100%;
+        top: 100px;
+        left: 0;
+        z-index: 2;
+        padding-bottom: 275px;
+    }
+    &-title {
+        @include font-title;
+        color: $secondary-text;
+        font-size: 119px;
+        // font-family: $font-family-base;
+        // font-weight: $font-weight-title;
+        text-shadow: $primary 8px 6px 5px;
+        padding-top: 240px;
+    }
+    &-subtitle {
+        font-family: $font-family-little;
+        color: $secondary-text;
+        font-size: 30px;
+        font-weight: $font-weight-subtitle;
+        text-shadow: $primary 0 0 10px;
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+    &-button {
+        @include button-primary;
+    //     border-radius: 15px;
+    //     background: $secondary;
+    //     border-style: none;
+    //     font-size: 30px;
+    //     font-family: $font-family-little;
+    //     color: $primary-text;
+    //     padding: 5px 46px;
+    //     box-shadow: 7px 7px 1px $primary;
+    //     &:hover {
+    //         background: $primary;
+    //         color: $secondary-text;
+    //         box-shadow: 7px 7px 1px $secondary;
+    //     }
+    }
+}
+.about {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 78px;
+    &-title {
+        @include font-title;
+        // font-family: $font-family-base;
+        // font-size: 60px;
+        // font-weight: $font-weight-title;
+        // letter-spacing: 1px;
+        // color: $primary-text;
+        // text-align: center;
+        padding-top: 6px;
+    }
+    &-subtitle {
+        @include font-subtitle;
+        // font-family: $font-family-base;
+        // font-size: 38px;
+        // line-height: 1;
+        // color: $primary-text;
+        padding-left: 88px;
+        padding-top: 34px;
+        letter-spacing: 1.8px;
+        // font-weight: $font-weight-subtitle;
+        &:after {
+            content:'';
+            display: block;
+            height: 2px;
+            width: 70%;
+            background: $primary;
+            margin: 32px auto;
+        }
+    }
+    &-text {
+        font-family: $font-family-little;
+        color: $primary-text;
+        text-align: center;
+        font-size: 25px;
+        font-weight: $font-weight-text;
+        letter-spacing: -0.65px;
+        padding: 0px 8px 0 88px;
+        line-height: 1.45;
+    }
+    &-img {
+        padding-top: 12px;
+        padding-left: 30px;
+    }
+}
+.services {
+    // background: $secondary;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    &-title {
+        @include font-title;
+        // font-family: $font-family-base;
+        // font-size: 70px;
+        letter-spacing: 3px;
+        // line-height: 1;
+        // color: $primary-text;
+        // font-weight: $font-weight-title;
+        margin: 0;
+    }
+    &-subtitle {
+        @include font-subtitle;
+        font-size: 30px;
+        letter-spacing: 0.1px;
+        // font-family: $font-family-base;
+        // color: $primary-text;
+        // font-weight: $font-weight-subtitle;
+        margin: 0;
+        padding-bottom: 45px;
+    }
+    &-text {
+        font-family: $font-family-little;
+        color: $primary-text;
+        font-size: 23px;
+        font-weight: $font-weight-text;
+        text-align: center;
+        margin: 0;
+        padding: 40px 0 40px 0;
+    }
+    &-frame {
+        position: relative;
+    }
+    &-icon {
+        position: absolute;
+        position: absolute;
+        margin-left: -135px;
+        margin-top: 60px;
+    }
+}
+.products {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &-title {
+        @include font-title;
+        // font-family: $font-family-base;
+        // font-size: 60px;
+        // color: $primary-text;
+        // font-weight: $font-weight-title;
+    }
+}
+.reviews {
+    height: 540px;
+}
+.catalog {
+    &-title {
+        @include font-title;
+        // font-family: $font-family-base;
+        // font-size: 70px;
+        // letter-spacing: 3px;
+        // line-height: 1;
+        // color: $primary-text;
+        // font-weight: $font-weight-title;
+        // margin: 0;
+    }
+}
+.contacts {
+    &-button {
+        @include button-primary;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .button-preview, .button-next {
+        width: 40px;
+        height: auto;
+    }
+    .link-title {
+        font-size: 20px;
+    }
+    // .about-subtitle:after {
+    //     width: 70%;
+    // }
+    .about-img {
+        // width: 65%;
+    }
+    .services-subtitle {
+        font-size: 24px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .button-preview, .button-next {
+        width: 44px;
+        height: auto;
+    }
+    .link-title {
+        font-size: 25px;
+    }
+
+// MAIN section
+    .main-title {
+        font-size: 80px;
+        padding-top: 269px;
+    }
+    .main-subtitle {
+        font-size: 29px;
+        padding-top: 30px;
+        padding-bottom: 19px;
+    }
+    .main-button {
+        font-size: 26px;
+    }
+
+// ABOUT section
+    .about-img {
+        padding-top: 100px;
+        padding-left: 50px;
+        width: 80%;
+    }
+    .about-subtitle {
+        padding-top: 50px;
+        padding-left: 8px;
+    }
+    // .about-subtitle:after {
+    //     width: 45%;
+    // }
+    .about-text {
+        padding: 0px 70px 0 70px;
+    }
+
+// SERVICES section
+    // .services-subtitle {
+    //     font-size: 28px;
+    // }
+  }
+  
+  @media (min-width: 992px) {
+    .button-preview, .button-next {
+        width: 48px;
+        height: auto;
+    }
+    .services-subtitle {
+        font-size: 30px;
+    }
+    .about-text {
+
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .button-preview, .button-next {
+      width: 54px;
+      height: auto;
+    }
+    .link-title {
+        font-size: 33px;
+    }
+    .about-img {
+        // width: 100%;
+    }
+    .services-subtitle {
+        font-size: 32px;
+    }
+  }
+

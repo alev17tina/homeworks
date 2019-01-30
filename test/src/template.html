@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    {% block title %}{% endblock %}
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alike+Angular|Cookie|Courgette|Croissant+One|Dancing+Script:400,700|Galada|Katibeh|Libre+Baskerville:400,400i,700|Lily+Script+One|Lobster|Lobster+Two:400,400i,700,700i|Markazi+Text:400,500,600,700|Niconne|Norican|Oleo+Script+Swash+Caps:400,700|Pacifico|Rochester|Sail|Satisfy|Spirax" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" type="text/css" href="/src/assets/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/src/assets/slick-1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css">
+  <!-- <script type="text/javascript" src="/src/assets/slick-1.8.1/slick/slick.min.js"></script> -->
+</head>
+<body>
+  <!-- {% include 'components/Layout/Header/header.html' %} -->
+  <header class="header">
+    <container class="logo">
+      <div class="container">
+        <div class="row">
+        <div class="col-12">
+          ​<div class="logo-img v-center">
+            <a href="#"><img src="/src/assets/img/logo-crop.png" class="mx-auto d-block" alt="..."></a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            ​<div class="logo-img v-center">
+              <p class="logo-title">Sweet Dreams</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-second">
+      </div>
+    </container>
+    <nav class="navbar justify-content-center nav-block" role="navigation">
+      <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link link-title" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-title" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-title" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-title" href="#">Tastes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-title" href="#">Contacts</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+  <container class="main">
+    <div class="container">
+      <div class="main-overlay text-center">
+        <h2 class="main-title">Delicious cupcakes</h2>
+        <p class="main-subtitle">Only from natural products without gluten!</p>
+        <a class="btn btn-primary btn-lg main-button" href="#">To order</a>
+      </div>
+    </div>
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/src/assets/img/slide-cake-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/src/assets/img/slide-cake-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/src/assets/img/slide-cake-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+          <img class="button-preview" src="/src/assets/img/left.png" alt="">
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+            <img class="button-next" src="/src/assets/img/right.png" alt="">
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> -->
+  </container>
+  <container class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="about-title">About Us</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <p class="about-subtitle">Welcom to the cupcake shop </br>Sweet Dreams!</p>
+          <p class="about-text">Here at The Cupcake Shoppe we’ve been baking from scratch each and every morning for over 10 years! <br>Our bakers start with hte highest quality, freshest ingridients avaliable and rise early to prepare pastries, sweet and savory consections and of cource specialty cupcakes daily.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img class="img-fluid about-img" src="/src/assets/img/picture-about.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </container>
+  <container class="services">
+    <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <p class="services-title">Services we provide</p>
+        <p class="services-subtitle">We provide services designed to improve the quality of service</p>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-6 col-lg-3">
+        <div>
+          <img class="services-frame" src="/src/assets/img/vintage-circle.png" alt="">
+          <img class="services-icon" src="/src/assets/img/shipping.svg" alt="">
+          <p class="services-text">Free <br>delivery</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+          <div>
+            <img class="services-frame" src="/src/assets/img/vintage-circle.png" alt="">
+            <img class="services-icon" src="/src/assets/img/chef.svg" alt="">
+            <p class="services-text">Chefs with years <br>of experience</p>
+          </div>
+      </div>
+      <div class="col-6 col-lg-3">
+          <div>
+            <img class="services-frame" src="/src/assets/img/vintage-circle.png" alt="">
+            <img class="services-icon" src="/src/assets/img/face.png" alt="">
+            <p class="services-text">Tasty & delicious <br>cakes</p>
+          </div>
+      </div>
+      <div class="col-6 col-lg-3">
+          <div>
+            <img class="services-frame" src="/src/assets/img/vintage-circle.png" alt="">
+            <img class="services-icon" src="/src/assets/img/tree.svg" alt="">
+            <p class="services-text">Fresh & natural <br>product</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </container>
+  <container class="products">
+    <div class="row">
+      <div class="col-12">
+        <p class="products-title">Our delicious products</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="products-slider">
+          <div><img class="products-slide" src="/src/assets/img/slider-cake-1.jpg" alt=""></div>
+          <div><img class="products-slide" src="/src/assets/img/slider-cake-2.jpg" alt=""></div>
+          <div><img class="products-slide" src="/src/assets/img/slider-cake-3.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-12">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="slide" src="/src/assets/img/slider-cake-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="slide" src="/src/assets/img/slider-cake-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="slide" src="/src/assets/img/slider-cake-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="slide" src="/src/assets/img/slider-cake-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="slide" src="/src/assets/img/slider-cake-3.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div> -->
+  </container>
+  <container class="reviews">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/src/assets/img/slide-cake-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <div class="carousel-caption d-block">
+                    <p>Lorem ipsum dolor /zfjslkdjf.sldk/</p>
+                    <p>Lorem ipsum</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/src/assets/img/slide-cake-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </container>
+  <!-- <container class="reviews-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="/src/assets/img/slide-big-1.svg" alt="...">
+                <div class="carousel-caption d-block">
+                  <img src="/src/assets/img/review-decoration.png" alt="...">
+                  <p>Lorem ipsum</p>
+                  <p>Lorem ipsum</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="..." alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>...</h5>
+                    <p>...</p>
+                  </div>
+                </div>
+              <div class="carousel-item">
+                <img src="..." alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>...</h5>
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </container> -->
+  <!-- <container>
+    <div class="container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+
+          direction: 'vertical',
+          loop: true,
+
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
+      </script>
+    </div>
+  </container> -->
+  <container class="catalog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="catalog-title">Choose your cupcake</p>
+        </div>
+        <div class="col-12">
+          <nav class="navbar justify-content-left" role="navigation">
+            <ul class="nav justify-content-left">
+              <li class="nav-item">
+                <a class="nav-link link-title" href="#">Chocolate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-title" href="#">Vanilla</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-title" href="#">Frutty</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-4">
+          <div><img class="catalog-pruduct" src="/src/assets/img/cake-1.png" alt=""></div>
+        </div>
+        <div class="col-4">
+          <div><img class="catalog-pruduct" src="/src/assets/img/cake-2.png" alt=""></div>
+        </div>
+        <div class="col-4">
+          <div><img class="catalog-pruduct" src="/src/assets/img/cake-3.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </container>
+  <container class="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="contacts-title">Contact us</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-md-6 .offset-md-3">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="Telephone number" maxLenth="13">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control contacts-comments" placeholder="Comments">
+            </div>
+            <button type="submit" class="btn btn-primary contacts-button">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>    
+  </container>
+
+  <div class="content">
+    {% block content %}{% endblock %}
+      <div class="container">
+
+      </div>
+  </div>
+  {% include 'components/Layout/Footer/footer.html' %}
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/assets/slick-1.8.1/slick/slick.min.js"></script>
+<!-- <script type="text/javascript" src="./index.js"></script> -->
+<script>
+    $('.products-slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      infinite: true,
+      dots: true,
+      variableWidth: true,
+      slidesToShow: 3,
+      responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }]
+});
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/src/assets/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./index.js"></script> -->
+<script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>
