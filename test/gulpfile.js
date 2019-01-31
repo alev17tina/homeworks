@@ -10,6 +10,13 @@ const nunjucks = require('gulp-nunjucks-render');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 
+gulp.task('js', () => {
+	return gulp
+	.src('./src/plugins/**/*.js')
+	.pipe(gulp.dest('./dist/js/'))
+	.pipe(sync.stream());
+});
+
 gulp.task('css', () => {
   return gulp
     .src('src/main.scss')
@@ -76,7 +83,7 @@ gulp.task('reload', () => {
   });
 });
 
-gulp.task('watch', ['img', 'css', 'html', 'reload'], () => {
+gulp.task('watch', ['img', 'css', 'html', 'js', 'reload'], () => {
   watch('src/**/*.scss', () => gulp.start('css'));
   watch('src/**/*.html', () => gulp.start('html'));
 });
